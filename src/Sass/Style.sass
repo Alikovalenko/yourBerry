@@ -1,0 +1,734 @@
+*
+	box-sizing: border-box
+
+main
+	position: relative
+	margin: 0 auto
+	width: 1260px
+	height: 1705px
+	margin-top: -50px
+
+nav
+	position: relative
+	z-index: 5
+	padding: 0 496px
+
+.btn
+	border-radius: 15%
+	background-image: linear-gradient(to top, #0e5766 0%, #4ce2ff 100%)
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.12)
+	color: #ffffff
+.form-control
+	border-radius: 8%
+	border-color: #000000
+
+a
+	color: honeydew
+
+header
+	width: 1260px
+	margin: 0 auto
+	position: relative
+	height: 380px
+
+.photo
+	background: url('../img/background/heder.jpg') center (center / cover) no-repeat
+	height: 285px
+
+.basket
+	position: absolute
+	width: 140px
+	height: 173px
+	z-index: 2
+	margin: 5px
+	left: 990px
+	top: 90px
+	background: url('../img/controls/basket.png') center (center / cover) no-repeat
+	&:hover
+		width: 150px
+		height: 183px
+		transition: 0.3s all
+			
+.greenline
+	z-index: 1
+	width: 1260px
+	position: absolute
+	top: 150px
+
+.logotype
+	position: absolute
+	z-index: 4
+	top: 168px
+	left: 58px
+
+.heder_social
+	height: 150px
+	width: 250px
+	position: absolute
+	font-weight: 400
+	font-size: 14px
+	text-align: center
+	color: white
+	margin: 0px 0 0 1010px
+	z-index: 3
+
+	.social
+		display: flex
+		position: absolute
+		justify-content: space-evenly
+
+.wooden
+	margin-top: 50px
+	position: absolute
+	height: 1000px
+	width: 1260px
+
+	.woodenboard
+		position: relative
+		margin-top: 100px
+		padding: 0  15px
+		z-index: 1
+
+.centersite
+	height: 1700px
+	width: 1260px
+	position: absolute
+
+.back
+	margin: 0 auto
+	position: relative
+	width: 800px
+	height: 1700px
+	background: url('../img/background/main.jpg') center (center / cover) no-repeat
+
+	.berries
+		position: absolute
+		width: 800px
+		height: 1000px
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		z-index: 2
+		margin-top: 150px
+
+	.Fline, .Sline, .Tline, .Forline
+		margin: 0px 0px 70px 0px
+
+footer
+	position: relative
+	width: 1260px
+	margin: 0 auto
+	margin-top: -305px
+
+.foot
+	.firstBox
+		color: honeydew
+		font-size: 18px
+		margin: 15px 60px 190px 250px
+
+	.secondBox
+		color: honeydew
+		font-size: 18px
+		margin: 15px 5px 190px 5px
+
+	margin: 0 auto
+	display: flex
+	width: 1260px
+	height: 300px
+	background-color: grey
+	opacity: 0.75
+	z-index: 1
+
+.Fline
+	display: flex
+	justify-content: space-around
+	position: relative
+	height: 152px
+	width: 1322px
+	&:hover
+		transition: 1s all
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			width: 1232px
+			height: 157px
+			background: url('../img/controls/woodenboard.png') center center / cover no-repeat
+			z-index: -1
+	transition: 0.3s all
+.Sline
+	display: flex
+	justify-content: space-around
+	position: relative
+	height: 152px
+	width: 1322px
+	&:hover
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			width: 1232px
+			height: 157px
+			background: url('../img/controls/woodenboard.png') center center / cover no-repeat
+			z-index: -1
+	transition: 0.3s all
+.Tline
+	display: flex
+	justify-content: space-around
+	position: relative
+	height: 152px
+	width: 1322px
+	&:hover
+		&::before
+			content: ''
+			position: absolute
+			display: inline-block
+			width: 1232px
+			height: 157px
+			background: url('../img/controls/woodenboard.png') center center / cover no-repeat
+			z-index: -1
+			transition: 1s all
+		&::after
+			transition: 1s all
+.Forline
+	display: flex
+	justify-content: space-around
+	position: relative
+	height: 152px
+	width: 1322px
+	&:hover
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			width: 1232px
+			height: 157px
+			background: url('../img/controls/woodenboard.png') center center / cover no-repeat
+			z-index: -1
+.inpt
+	height: 20px
+	width: 40px
+	background: #ffffff
+	border-radius: 15%
+	z-index: 3
+	display: none
+.barberry
+	display: block
+	height: 152px
+	width: 147px
+	background: url('../img/berry/barberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+			input [type="text"]
+.bearberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/bearberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+			
+
+				
+.birdCherry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/birdCherry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.blackberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/blackberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.blueberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/blueberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.cherry
+	display: block
+	height: 152px
+	width: 148px
+	background: url('../img/berry/cherry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.cloudberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/cloudberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.cranberry
+	display: block
+	height: 152px
+	width: 146px
+	background: url('../img/berry/cranberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.crovberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/crovberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.elderberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/elderberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.gooseberry
+	display: block
+	height: 152px
+	width: 148px
+	background: url('../img/berry/gooseberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.honeysuckle
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/honeysuckle.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.juniper
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/juniper.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.lingonberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/lingonberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.mulberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/mulberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.Radcurrants
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/Radcurrants.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.raspberries
+	display: block
+	height: 152px
+	width: 148px
+	background: url('../img/berry/raspberries.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.shadberry
+	display: block
+	height: 152px
+	width: 149px
+	background: url('../img/berry/shadberry.png') center center / cover no-repeat
+	z-index: 2
+	border: 1px solid #023100
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+.strawberry
+	display: block
+	height: 152px
+	width: 148px
+	background: url('../img/berry/strawberry.png') center center / cover no-repeat
+	border: 1px solid #023100
+	z-index: 2
+	&:hover
+		&:before
+			content: ''	
+			display: block
+			height: 190px
+			width: 160px
+			background: url('../img/controls/frame.png') center center / cover no-repeat
+			z-index: 2
+			transition: 1s all
+		&:after
+			content: ''
+			display: block
+			position: relative
+			margin: -30px 0 0 80px
+			border: 1px solid #023100
+			height: 20px
+			width: 40px
+			background: #ffffff
+			border-radius: 15%
+			z-index: 3
+	
+	
+
